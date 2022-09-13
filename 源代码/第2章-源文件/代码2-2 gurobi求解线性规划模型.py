@@ -23,4 +23,4 @@ m.setObjective(5*x1 + 6*x2 + 23*x3 + 5*x4 + 24*x5 + 6*x6 +23*x7 + 5*x8, GRB.MINI
 m.optimize()
 print('最优值：', m.objVal)
 for v in m.getVars():
-print('参数', v.varName, '=', v.x)
+    print('参数', v.varName, '=', v.x)
